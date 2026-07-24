@@ -1,8 +1,26 @@
 aid: casa
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/casa.png
 name: Casa
-description: 'Casa is a company surfaced as a portfolio company of forerunner-ventures, true-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Casa is a home management membership service that helps homeowners
+  handle maintenance and everyday household tasks through a mix of digital home
+  documentation and professional services. A $199/month membership bundles a
+  concierge for project research, vendor negotiation and scheduling, monthly
+  handyman hours, an Autopilot maintenance care plan, a 3D home inventory
+  (appliances, paint colors, safety systems), utility and property-tax tracking,
+  package handling, and recurring-vendor management. Casa is available in the San
+  Francisco Bay Area, Los Angeles, and Austin, and is backed by Forerunner
+  Ventures and True Ventures. No public developer/API surface has been identified.'
 url: https://raw.githubusercontent.com/api-evangelist/casa/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Home Services
+- Home Management
+- Property Management
+- Concierge
+- Maintenance
+- Membership
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,4 +49,19 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://my.casa
+  url: https://getcasa.com
+- type: SignUp
+  url: https://getcasa.com/signup
+- type: Support
+  url: https://link.casa/intro
+- type: TermsOfService
+  url: https://getcasa.com/legal/mtou
+- type: PrivacyPolicy
+  url: https://getcasa.com/legal/privacy
+- type: DomainSecurity
+  url: security/casa-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
